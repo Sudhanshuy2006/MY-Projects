@@ -94,9 +94,7 @@ document.querySelectorAll(".elem").forEach(function (elem) {
             ease: Power1,
             top: diff,
             left: dets.clientX,
-            rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),       /*clamp usi ke nader value rakhta hai jitni aapko chaiye...*//*and multiply karke hum ghata bhi sakta hai BroadcastChannel...*/
-            
-        });
+            rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),       
     });
 });
 
