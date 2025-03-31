@@ -125,36 +125,6 @@ body {
     display: flex;
     gap: 5px;
 }
-/* #second {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Adjust spacing */
-/* }
-
-.elem {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 4vw 1vw;
-    border-top: 1px solid #888;
-} */
-
-/* .elem img {
-        border-radius: 7%;
-        opacity: 0; /* Start hidden */
-        /* visibility: hidden; 
-        height: 150%;
-        z-index: 999;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* Center image initially */
-        /* transition: opacity 0.3s ease-in-out;
-    }  */ */
-
-
 
 #second {
     padding-right: 10vw;
