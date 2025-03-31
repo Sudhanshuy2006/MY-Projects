@@ -12,13 +12,13 @@ const scroll = new LocomotiveScroll({
 
 function firstpageaim() {
     var lt = gsap.timeline();
-    lt.from("#nav", {           /*from mean uper se niche...*/
+    lt.from("#nav", {           
         y: '-10',
         opacity: 0,
         duration: 2,
         ease: Expo.easeInOut
     })
-    lt.to(".boundingelem", {      /* to mean niche se uper...*/
+    lt.to(".boundingelem", {      
         y: 0,
         duration: 1.5,
         delay: -1,
@@ -71,8 +71,6 @@ function circlemousemove(xscale, yscale) {
 circlemousemove();
 
 
-
-//charo elemnet ko select karo , uske baad charo pe mousemove lagao,jab mousemove ho tab ye pata karo ki mouse kaha par hai, jiska matalb hai ki mouse ki x and y position pata karo , mouse ki x and y position ke badle image ko show karo and usko move karo,,move karo roate karo and jaise jaise mouse tez chale wiase roation bhi tex ho jaye...
 document.querySelectorAll(".elem").forEach(function (elem) {
     var rotate = 0;
     var diffrot = 0;
@@ -86,9 +84,9 @@ document.querySelectorAll(".elem").forEach(function (elem) {
     });
 
     elem.addEventListener("mousemove", function (dets) {
-        var diff = dets.clientY - elem.getBoundingClientRect().top;                /*ye puri doori hai client ki - div top ki doori  and getbounding is details of div jaha pe image hai ...isme top se doori bhi dekh sakte hai getbounding karke...and detscleiny ka mean hai ki mouse ka button kaha hai height wise bro... */
-        diffrot = dets.clientX - rotate; /*isme current value se - pichli value kiya hai ok...*/
-        rotate = dets.clientX;      /*aur isko humne save kiya hai aise...*/
+        var diff = dets.clientY - elem.getBoundingClientRect().top;               
+        diffrot = dets.clientX - rotate; 
+        rotate = dets.clientX;      
         gsap.to(elem.querySelector("img"), {
             opacity: 1,
             ease: Power1,
